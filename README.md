@@ -1,44 +1,79 @@
 # ✦ Pulsar Client
-## No we're not that peripheral brand.
 
-- Tired of bloatware clients? Sick of Lunar and Badlion pushing money-trap cosmetics, daily shop banners, and hogging 1GB+ of RAM just idling? 
-- Here is the solution to that problem: **Pulsar Client**.
-
-Pulsar is a hyper-lightweight, 100% open-source Minecraft optimization client and launcher built with **Rust**, **Tauri v2**, and **Fabric**. Zero corporate fluff, zero trackers, and maximum raw FPS.
-
-## Read our [Architecture Guide](ARCHITECTURE.md)
-If you use an AI Agent please read [Agent Guides](AGENTS.md) or [Claude Guides](CLAUDE.md)
+> Hyper-lightweight, 100% open-source Minecraft launcher and optimization client. Zero bloat, zero tracking, maximum raw FPS.
 
 ---
 
-## 🛑 Why Switch?
+## ⚡ The Solution to Client Bloat
+
+Tired of traditional clients pushing daily cosmetic shops, battle passes, and consuming 1GB+ of system memory just idling in the background?
+
+**Pulsar Client** rethinks the Minecraft launcher from the ground up using **Rust**, **Tauri v2**, and **React 18**:
 
 | The Industry Standard | Pulsar Client |
 | :--- | :--- |
-| ❌ 500MB – 1.2GB idle RAM usage | ✅ **< 30MB idle RAM footprint** |
-| ❌ Annoying shop banners & paid cosmetics | ✅ **Zero ads, zero monetization, zero bloat** |
-| ❌ Slow 5+ second launcher boot times | ✅ **Sub-second instant startup (<0.4s)** |
-| ❌ Closed-source with background telemetry | ✅ **100% Open Source (0% trackers)** |
+| ❌ 500 MB – 1.2 GB idle RAM footprint | ✅ **< 30 MB idle RAM footprint** (suspends on game launch) |
+| ❌ Intrusive store banners & paid cosmetics | ✅ **Zero ads, zero monetization, zero bloat** |
+| ❌ 5+ second sluggish launcher startup | ✅ **Sub-second instant startup (< 0.4s)** |
+| ❌ Closed-source binaries with telemetry | ✅ **100% Open Source & verifiable (0% trackers)** |
 
 ---
 
-## ⚡ What You Get Out of the Box
+## 🚀 Key Features
 
-* **🚀 Pre-Tuned Performance Stack:** Ships pre-packaged with essential optimization mods: **Sodium**, **Lithium**, **FerriteCore**, **ModernFix**, **Iris**, and **NVIDIUM** (Mesh Shaders).
-* **🔒 Pure Local Auth:** Authenticates directly with Microsoft via a local `127.0.0.1` Rust loopback server. Your tokens never leave your PC.
-* **🎯 Focused OLED Interface:** Sleek, dark UI featuring a prominent centered **PLAY** CTA and rapid profile switcher.
+* **Pre-Tuned Optimization Stack:** Built-in support for the leading modern performance mods: **Sodium**, **Lithium**, **FerriteCore**, **ModernFix**, **Iris**, and **NVIDIUM** (Mesh Shaders on NVIDIA Turing+).
+* **Pure Local Authentication:** Authenticates directly via official Microsoft OAuth 2.0 PKCE over a local `127.0.0.1` Rust loopback server. Tokens are stored in your OS keyring and never leave your machine.
+* **Focused OLED Interface:** Clean, high-contrast dark design featuring a sleek top minimalist navigation bar with `✦ Pulsar Client` branding, a centered **PLAY** action, and an attached version switcher without distracting news carousels or store banners.
+* **Detached Game Process:** The Java JVM process is launched completely detached, allowing the launcher to minimize to tray or close to preserve all system resources for gameplay.
 
 ---
 
-## 🛠️ Stack Architecture
+## 🛠️ Technology Stack
 
-* **UI Layer:** Vite • React • TypeScript • Tailwind CSS • Shadcn UI
-* **Core Engine:** Rust • Tauri v2 • Tokio Async Runtime
+* **Frontend:** React 18 • TypeScript • Vite • Tailwind CSS • Shadcn UI • Zustand • Lucide Icons
+* **Backend:** Rust 2021 • Tauri v2 • Tokio Async Runtime • Reqwest • Keyring
 * **Game Runtime:** Java JVM + Fabric Loader
 
 ---
 
-# Stay Tuned.
-Cos i'm lazy, most of this .md is created by AI. The code base is already done just cos i'm lazy i'll upload it later.
+## 💻 Development Quickstart
 
-[Pulsar Client](assets/✦.png)
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v18+) and [pnpm](https://pnpm.io/)
+- [Rust](https://rustup.rs/) (stable toolchain)
+- [Tauri v2 Prerequisites](https://v2.tauri.app/start/prerequisites/)
+
+### Setup
+```bash
+# Clone the repository
+git clone https://github.com/cxernlol/PulsarClient.git
+cd PulsarClient
+
+# Install frontend dependencies
+pnpm install
+
+# Run frontend + Tauri native layer with hot-reload
+pnpm tauri dev
+```
+
+### Verification & Linting
+```bash
+# Check TypeScript types
+pnpm tsc --noEmit
+
+# Check Rust backend
+cd src-tauri && cargo check
+```
+
+---
+
+## 📖 Documentation
+- [Technical Architecture Guide](ARCHITECTURE.md)
+- [Agent Guidelines & Coding Standards](AGENTS.md)
+- [Claude Coding Rules](CLAUDE.md)
+- [Contributing Guide](CONTRIBUTING.md)
+
+---
+
+## 📄 License
+This project is licensed under the terms described in the [LICENSE](LICENSE) file.
