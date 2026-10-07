@@ -2,33 +2,33 @@
 name: frontend-design
 description: >
   Guidance for distinctive, intentional visual design when building or reshaping
-  the Pulsar Client UI. Helps with aesthetic direction, typography, motion, and
+  the Rival Client UI. Helps with aesthetic direction, typography, motion, and
   making choices that don't read as templated defaults. Adapted from the
-  Anthropic claude-code frontend-design skill for the Pulsar Client context.
+  Anthropic claude-code frontend-design skill for the Rival Client context.
 license: See original at github.com/anthropics/claude-code — Complete terms in LICENSE.txt
 ---
 
-# Frontend Design — Pulsar Client Edition
+# Frontend Design — Rival Client Edition
 
-Approach this as the design lead at a studio known for giving every client a distinct visual identity. Pulsar's audience is **performance-obsessed PC gamers** who run OLED monitors, custom desk setups, and despise anything that feels bloated, corporate, or cheap. They have already rejected proposals that felt cliché or templated. Make deliberate, opinionated choices specific to this brief.
+Approach this as the design lead at a studio known for giving every client a distinct visual identity. Rival's audience is **performance-obsessed PC gamers** who run OLED monitors, custom desk setups, and despise anything that feels bloated, corporate, or cheap. They have already rejected proposals that felt cliché or templated. Make deliberate, opinionated choices specific to this brief.
 
 ---
 
-## Ground Every Design in Pulsar's World
+## Ground Every Design in Rival's World
 
 Before designing any screen, confirm:
 - **Who sees it?** Hardcore Minecraft players who care about FPS, not casual users.
 - **What's its job?** Get them into the game as fast as possible, with zero friction.
 - **What's the vernacular?** Dark terminal aesthetics, hardware RGB, OLED contrast, engineering precision.
 
-The subject's industry (high-performance gaming software) is where distinctive visual choices come from. A Pulsar screen should feel like a gaming peripheral's companion app — not a SaaS dashboard or a consumer app store.
+The subject's industry (high-performance gaming software) is where distinctive visual choices come from. A Rival screen should feel like a gaming peripheral's companion app — not a SaaS dashboard or a consumer app store.
 
 ---
 
 ## Design Principles
 
 ### Hero / First Impression
-The dashboard hero is the first thing the player sees. Open with the most characteristic thing in Pulsar's world: a **prominent, glowing PLAY button** with a pulsing halo ring — not a generic "welcome" banner, a stat card, or a news carousel. The centered CTA *is* the hero.
+The dashboard hero is the first thing the player sees. Open with the most characteristic thing in Rival's world: a **prominent, glowing PLAY button** with a pulsing halo ring — not a generic "welcome" banner, a stat card, or a news carousel. The centered CTA *is* the hero.
 
 ### Palette — Strict OLED Dark
 | Token | Hex | Usage |
@@ -47,7 +47,7 @@ The dashboard hero is the first thing the player sees. Open with the most charac
 Never use warm beige (#F4F1EA), warm whites, or light-mode palettes.
 
 ### Typography
-Use **one or two** font families. The combination for Pulsar:
+Use **one or two** font families. The combination for Rival:
 - **Display / UI:** `Space Grotesk` — geometric sans, feels engineered and precise.
 - **Mono / Code:** `JetBrains Mono` — for version strings, JVM flags, memory readouts.
 
@@ -97,7 +97,7 @@ Do NOT reach for Inter, Roboto, or system-ui as primary display fonts — they a
 
 ---
 
-## Pulsar-Specific UI Patterns
+## Rival-Specific UI Patterns
 
 ### 3D Depth Carousel & Shadow Avatar Switching
 ```text
@@ -149,11 +149,11 @@ Do NOT reach for Inter, Roboto, or system-ui as primary display fonts — they a
 ### Sleek Top Minimalist Navbar
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
-│ ✦ Pulsar Client    [ Home ]   [ Mods ]   [ Settings ]   [ Console ]   [● Steve] ─ □ ✕  │
+│ ✦ Rival Client    [ Home ]   [ Mods ]   [ Settings ]   [ Console ]   [● Steve] ─ □ ✕  │
 └────────────────────────────────────────────────────────────────────────┘
 ```
 - Pinned to the top of the window, acts as both draggable header and navigation bar
-- Left: `✦ Pulsar Client` branding with subtle cyan glow on `✦`
+- Left: `✦ Rival Client` branding with subtle cyan glow on `✦`
 - Center: Minimalist tab navigation pills with subtle active indicator
 - Right: Account pill (`[●] Steve`) and frameless window controls (`─`, `□`, `✕`)
 
