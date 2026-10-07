@@ -1,12 +1,12 @@
 ---
-name: pulsar-react-frontend
+name: rival-react-frontend
 description: >
-  Skill for building Pulsar Client React/TypeScript components and Zustand stores.
+  Skill for building Rival Client React/TypeScript components and Zustand stores.
   Use when working in src/: creating components, setting up routing, managing state,
   integrating Tauri IPC, or wiring up Framer Motion animations.
 ---
 
-# Pulsar Client — React Frontend Skill
+# Rival Client — React Frontend Skill
 
 ## Rules (from AGENTS.md)
 - Components must be **Functional Components** with TypeScript interfaces — no class components.
@@ -54,7 +54,7 @@ src/
 │   │   ├── PlayButton.tsx   # Centered hero CTA with glow + pulsing ring
 │   │   └── VersionSwitcher.tsx # Dropdown: profile/version selector
 │   ├── layout/
-│   │   ├── Navbar.tsx       # Sleek top minimalist navbar (✦ Pulsar Client)
+│   │   ├── Navbar.tsx       # Sleek top minimalist navbar (✦ Rival Client)
 │   │   └── StatusRibbon.tsx # Bottom engine status & RAM ribbon
 │   ├── library/
 │   │   └── Library.tsx      # Installed versions & profiles
