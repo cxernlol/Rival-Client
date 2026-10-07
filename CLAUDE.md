@@ -1,4 +1,4 @@
-# ✦ CLAUDE.md — Pulsar Client Context & Rules
+# ✦ CLAUDE.md — Rival Client Context & Rules
 
 This file provides context, commands, and rules for Claude Code and AI agents working in this repository.
 
@@ -6,7 +6,7 @@ This file provides context, commands, and rules for Claude Code and AI agents wo
 
 ## 🎯 Project Overview
 
-**Pulsar Client** is an ultra-lightweight, open-source Minecraft optimization client and launcher built with Rust, Tauri v2, and React. Its mission is zero bloat, sub-second startup (< 0.4s), and sub-30MB idle RAM footprint while providing pre-packaged Fabric optimization mods (*Sodium, NVIDIUM, Lithium, Iris, FerriteCore, ModernFix*).
+**Rival Client** is an ultra-lightweight, open-source Minecraft optimization client and launcher built with Rust, Tauri v2, and React. Its mission is zero bloat, sub-second startup (< 0.4s), and sub-30MB idle RAM footprint while providing pre-packaged Fabric optimization mods (*Sodium, NVIDIUM, Lithium, Iris, FerriteCore, ModernFix*).
 
 ---
 
@@ -15,9 +15,9 @@ This file provides context, commands, and rules for Claude Code and AI agents wo
 Always check and follow the relevant skill when working on subsystems:
 - [`.agents/skills/karpathy-guidelines/SKILL.md`](.agents/skills/karpathy-guidelines/SKILL.md): Behavioral coding discipline & minimalism.
 - [`.agents/skills/frontend-design/SKILL.md`](.agents/skills/frontend-design/SKILL.md): High-contrast OLED dark styling & typography.
-- [`.agents/skills/pulsar-tauri-backend/SKILL.md`](.agents/skills/pulsar-tauri-backend/SKILL.md): Tauri v2 backend commands & async Tokio rules.
-- [`.agents/skills/pulsar-react-frontend/SKILL.md`](.agents/skills/pulsar-react-frontend/SKILL.md): React 18, Zustand state, Lucide icons, Framer Motion.
-- [`.agents/skills/pulsar-microsoft-auth/SKILL.md`](.agents/skills/pulsar-microsoft-auth/SKILL.md): Local Microsoft PKCE loopback auth flow.
+- [`.agents/skills/Rival-tauri-backend/SKILL.md`](.agents/skills/Rival-tauri-backend/SKILL.md): Tauri v2 backend commands & async Tokio rules.
+- [`.agents/skills/Rival-react-frontend/SKILL.md`](.agents/skills/Rival-react-frontend/SKILL.md): React 18, Zustand state, Lucide icons, Framer Motion.
+- [`.agents/skills/Rival-microsoft-auth/SKILL.md`](.agents/skills/Rival-microsoft-auth/SKILL.md): Local Microsoft PKCE loopback auth flow.
 
 ---
 
