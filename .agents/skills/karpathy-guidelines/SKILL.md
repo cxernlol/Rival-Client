@@ -2,14 +2,14 @@
 name: karpathy-guidelines
 description: >
   Behavioral guidelines to reduce common LLM coding mistakes. Use when writing,
-  reviewing, or refactoring any Pulsar Client code (Rust or TypeScript) to avoid
+  reviewing, or refactoring any Rival Client code (Rust or TypeScript) to avoid
   overcomplication, make surgical changes, surface assumptions, and define
   verifiable success criteria. Adapted from Andrej Karpathy's observations on
   LLM coding pitfalls.
 license: MIT — see github.com/multica-ai/andrej-karpathy-skills
 ---
 
-# Karpathy Guidelines — Pulsar Client
+# Karpathy Guidelines — Rival Client
 
 Behavioral guidelines to reduce common LLM coding mistakes, adapted from
 [Andrej Karpathy's observations](https://x.com/karpathy/status/2015883857489522876)
@@ -30,7 +30,7 @@ Before implementing anything:
 - If a simpler approach exists, say so. Push back when warranted.
 - If something is unclear, stop. Name what's confusing. Ask.
 
-> **Pulsar context:** The architecture has strict constraints (< 30 MB idle RAM,
+> **Rival context:** The architecture has strict constraints (< 30 MB idle RAM,
 > < 0.4s startup, async-only Rust). Always verify your approach doesn't violate
 > these before writing a single line.
 
@@ -49,7 +49,7 @@ Before implementing anything:
 Ask yourself: *"Would a senior Rust engineer say this is idiomatic and minimal?"*
 If not, trim it.
 
-> **Pulsar context:** Every extra dependency is RAM. Every abstraction layer is
+> **Rival context:** Every extra dependency is RAM. Every abstraction layer is
 > startup time. Keep Rust modules focused. Keep React components single-purpose.
 
 ---
@@ -64,7 +64,7 @@ If not, trim it.
 - Preserve existing comments and docstrings unless they are directly wrong.
 - After editing, re-read the surrounding code to confirm nothing broke.
 
-> **Pulsar context:** The codebase has performance-sensitive paths (startup sequence,
+> **Rival context:** The codebase has performance-sensitive paths (startup sequence,
 > JVM spawn). Touching unrelated code in those paths can break timing guarantees.
 
 ---
