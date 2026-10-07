@@ -1,13 +1,13 @@
 ---
-name: pulsar-tauri-backend
+name: rival-tauri-backend
 description: >
-  Skill for working on the Pulsar Client Rust/Tauri v2 backend.
+  Skill for working on the Rival Client Rust/Tauri v2 backend.
   Use when implementing or modifying anything inside src-tauri/src/:
   IPC commands, Tokio async tasks, app lifecycle, window management,
   auth, downloader, game spawner, or config persistence.
 ---
 
-# Pulsar Client — Tauri v2 Backend Skill
+# Rival Client — Tauri v2 Backend Skill
 
 ## Non-Negotiable Rules (from AGENTS.md)
 - All disk, network, and process operations MUST be `async` via Tokio.
@@ -61,7 +61,7 @@ src-tauri/src/
 │   └── process.rs       # Spawn detached game process, emit `game_started` event
 └── config/
     ├── mod.rs
-    └── settings.rs      # Read/write ~/.pulsar/settings.json (RAM MB, JVM flags, last profile)
+    └── settings.rs      # Read/write ~/.Rival/settings.json (RAM MB, JVM flags, last profile)
 ```
 
 ---
