@@ -1,6 +1,6 @@
-# ✦ Pulsar Client — Technical Specification & Project Architecture
+# ✦ Rival Client — Technical Specification & Project Architecture
 
-**Pulsar Client** is an open-source, hyper-lightweight Minecraft launcher and optimization distribution. Built with **Rust**, **Tauri v2**, and **React**, it enforces a strict zero-bloat philosophy: maximum raw FPS, zero background telemetry, sub-second startup, and an OLED-focused desktop interface.
+**Rival Client** is an open-source, hyper-lightweight Minecraft launcher and optimization distribution. Built with **Rust**, **Tauri v2**, and **React**, it enforces a strict zero-bloat philosophy: maximum raw FPS, zero background telemetry, sub-second startup, and an OLED-focused desktop interface.
 
 ---
 
@@ -45,14 +45,14 @@
 ## 3. Directory Structure
 
 ```text
-PulsarClient/
+RivalClient/
 ├── .agents/                     # AI Agent skills & guidelines
 │   └── skills/
 │       ├── frontend-design/     # Distinctive visual design rules
 │       ├── karpathy-guidelines/ # Behavioral coding discipline
-│       ├── pulsar-tauri-backend/# Rust / Tauri v2 IPC patterns
-│       ├── pulsar-react-frontend/# React components & Zustand stores
-│       └── pulsar-microsoft-auth/# OAuth 2.0 PKCE loopback specs
+│       ├── Rival-tauri-backend/# Rust / Tauri v2 IPC patterns
+│       ├── Rival-react-frontend/# React components & Zustand stores
+│       └── Rival-microsoft-auth/# OAuth 2.0 PKCE loopback specs
 ├── src-tauri/                   # Rust Backend (Tauri v2 Native Layer)
 │   ├── Cargo.toml
 │   ├── tauri.conf.json
@@ -61,7 +61,7 @@ PulsarClient/
 │       ├── auth/                # Microsoft OAuth 2.0 PKCE loopback server & keyring
 │       ├── downloader/          # Async asset, library & Fabric downloader (Tokio)
 │       ├── game/                # JVM command builder, G1GC tuning & process management
-│       └── config/              # Local settings persistence (~/.pulsar/settings.json)
+│       └── config/              # Local settings persistence (~/.Rival/settings.json)
 └── src/                         # React Frontend (Vite)
     ├── index.html
     ├── App.tsx
@@ -113,7 +113,7 @@ Adhering strictly to [`frontend-design`](.agents/skills/frontend-design/SKILL.md
 
 ```text
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
-│ ✦ Pulsar Client    [ Home ]   [ Mods ]   [ Settings ]   [ Console ]               ─ □ ✕│ <- Sleek Top Minimalist Nav Bar
+│ ✦ Rival Client    [ Home ]   [ Mods ]   [ Settings ]   [ Console ]               ─ □ ✕│ <- Sleek Top Minimalist Nav Bar
 ├────────────────────────────────────────────────────────────────────────────────────────┤
 │                                                                                        │
 │                                      ╭── Steve_PvP ──╮                                 │ <- Floating Nametag (Active Account Only)
@@ -139,7 +139,7 @@ Adhering strictly to [`frontend-design`](.agents/skills/frontend-design/SKILL.md
 ```
 
 1. **Sleek Top Minimalist Navigation Bar:**
-   - **Top-Left Identity:** `✦ Pulsar Client` branding pinned to the top-left with a glowing neon cyan accent on the `✦` star glyph. Draggable window region.
+   - **Top-Left Identity:** `✦ Rival Client` branding pinned to the top-left with a glowing neon cyan accent on the `✦` star glyph. Draggable window region.
    - **Integrated Navigation Pills:** Minimalist tab switches positioned directly in the top bar: `[ Home ]`, `[ Mods ]`, `[ Settings ]`, `[ Console ]`.
    - **Top-Right Quick Actions:** Frameless window controls (`─`, `□`, `✕`).
 2. **Minecraft Floating Nametag & Active 3D Avatar:**
