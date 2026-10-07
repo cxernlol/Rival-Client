@@ -1,12 +1,12 @@
-# ✦ Agent Guidelines — Pulsar Client
+# ✦ Agent Guidelines — Rival Client
 
-This file provides system instructions, design constraints, and developer workflows for AI coding agents working on the **Pulsar Client** repository.
+This file provides system instructions, design constraints, and developer workflows for AI coding agents working on the **Rival Client** repository.
 
 ---
 
 ## 🎯 Project Identity & Philosophy
 
-**Pulsar Client** is an open-source, hyper-lightweight Minecraft launcher and optimization client.
+**Rival Client** is an open-source, hyper-lightweight Minecraft launcher and optimization client.
 
 * **Zero-Bloat Rule:** Never introduce telemetry, tracking scripts, ad components, or daily promotion carousels.
 * **Performance Constraints:** 
@@ -24,9 +24,9 @@ Before performing work on specific subsystems, consult the relevant skill in `.a
 |---|---|---|
 | `karpathy-guidelines` | [`.agents/skills/karpathy-guidelines/SKILL.md`](.agents/skills/karpathy-guidelines/SKILL.md) | Think before coding, surgical diffs, verify success criteria. |
 | `frontend-design` | [`.agents/skills/frontend-design/SKILL.md`](.agents/skills/frontend-design/SKILL.md) | High-contrast OLED dark styling, typography, avoiding AI tropes. |
-| `pulsar-tauri-backend` | [`.agents/skills/pulsar-tauri-backend/SKILL.md`](.agents/skills/pulsar-tauri-backend/SKILL.md) | Tauri v2 commands, Tokio async runtimes, G1GC tuning. |
-| `pulsar-react-frontend` | [`.agents/skills/pulsar-react-frontend/SKILL.md`](.agents/skills/pulsar-react-frontend/SKILL.md) | React 18, Zustand state, Lucide icons, Framer Motion rules. |
-| `pulsar-microsoft-auth` | [`.agents/skills/pulsar-microsoft-auth/SKILL.md`](.agents/skills/pulsar-microsoft-auth/SKILL.md) | Local PKCE loopback server, Mojang token exchange & keyring. |
+| `Rival-tauri-backend` | [`.agents/skills/Rival-tauri-backend/SKILL.md`](.agents/skills/Rival-tauri-backend/SKILL.md) | Tauri v2 commands, Tokio async runtimes, G1GC tuning. |
+| `Rival-react-frontend` | [`.agents/skills/Rival-react-frontend/SKILL.md`](.agents/skills/Rival-react-frontend/SKILL.md) | React 18, Zustand state, Lucide icons, Framer Motion rules. |
+| `Rival-microsoft-auth` | [`.agents/skills/Rival-microsoft-auth/SKILL.md`](.agents/skills/Rival-microsoft-auth/SKILL.md) | Local PKCE loopback server, Mojang token exchange & keyring. |
 
 ---
 
@@ -42,7 +42,7 @@ Before performing work on specific subsystems, consult the relevant skill in `.a
 ## 📂 Codebase Map
 
 ```text
-PulsarClient/
+RivalClient/
 ├── .agents/skills/              # Specialized domain skills for AI agents
 ├── src-tauri/                   # Rust Backend (Tauri Native Layer)
 │   ├── Cargo.toml
@@ -95,7 +95,7 @@ pnpm tsc --noEmit
 
 1. **UI/UX Rules (Frontend)**
    - **Theme Palette:** Strictly adhere to OLED Black (`#000000`) and Industrial Zinc (`#09090b`), accented by glowing neon cyan (`#06b6d4`), emerald (`#10b981`), or violet (`#8b5cf6`).
-   - **Sleek Top Minimalist Navbar:** Pinned top bar featuring `✦ Pulsar Client` branding on the top left, minimalist tab switches (`Home`, `Mods`, `Settings`, `Console`), and top-right window controls.
+   - **Sleek Top Minimalist Navbar:** Pinned top bar featuring `✦ Rival Client` branding on the top left, minimalist tab switches (`Home`, `Mods`, `Settings`, `Console`), and top-right window controls.
    - **3D Avatar Depth Carousel & Shadow Avatar:** Centerpiece features the active 3D player avatar with a floating nametag above its head. Secondary accounts stand in depth as dimmed shadow avatars (nametag hidden). Clicking/sliding smoothly transitions between up to 3 accounts with native 3D horizontal slide motion.
    - **Centered Hero CTA Layout:** The main dashboard features the glowing centered PLAY GAME CTA directly beneath the 3D avatar stage, with the version switcher dropdown attached directly beneath it.
    - **Icons:** Use `lucide-react` icons exclusively.
