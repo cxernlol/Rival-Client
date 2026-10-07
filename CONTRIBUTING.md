@@ -1,7 +1,7 @@
-# ✦ Contributing to Pulsar Client
+# ✦ Contributing to Rival Client
 
-First off, thank you for considering contributing to Pulsar Client! 
-Pulsar is built on a strict **"No-BS" philosophy**: zero bloat, zero telemetry, maximum raw FPS, and sub-second performance. We welcome contributions that align with these principles.
+First off, thank you for considering contributing to Rival Client! 
+Rival is built on a strict **"No-BS" philosophy**: zero bloat, zero telemetry, maximum raw FPS, and sub-second performance. We welcome contributions that align with these principles.
 
 ---
 
@@ -17,21 +17,21 @@ Pulsar is built on a strict **"No-BS" philosophy**: zero bloat, zero telemetry, 
 
 ### 1. Reporting Bugs
 Found a glitch or crash? Open an issue on GitHub:
-* Check existing [Issues](https://github.com/cxernlol/PulsarClient/issues) to avoid duplicates.
+* Check existing [Issues](https://github.com/cxernlol/RivalClient/issues) to avoid duplicates.
 * Provide clear steps to reproduce the issue.
 * Include system specs (OS, GPU, Java version, launcher logs).
 
 ### 2. Requesting Features
 Have an idea that improves client speed or quality of life?
-* Open a feature request under [Issues](https://github.com/cxernlol/PulsarClient/issues).
+* Open a feature request under [Issues](https://github.com/cxernlol/RivalClient/issues).
 * Keep suggestions focused on performance, UI usability, or essential optimization mods.
 
 ### 3. Submitting Code (Pull Requests)
 
 1. **Fork & Clone:**
    ```bash
-   git clone https://github.com/cxernlol/PulsarClient.git
-   cd PulsarClient
+   git clone https://github.com/cxernlol/RivalClient.git
+   cd RivalClient
    ```
 2. **Create a Future Branch:**
    ```Bash
