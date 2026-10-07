@@ -1,12 +1,12 @@
 ---
-name: pulsar-microsoft-auth
+name: rival-microsoft-auth
 description: >
-  Skill for implementing Microsoft OAuth 2.0 PKCE authentication in Pulsar Client.
+  Skill for implementing Microsoft OAuth 2.0 PKCE authentication in Rival Client.
   Use when working on src-tauri/src/auth/: the loopback server, PKCE flow,
   Minecraft token exchange, and secure local token storage.
 ---
 
-# Pulsar Client — Microsoft OAuth 2.0 PKCE Skill
+# Rival Client — Microsoft OAuth 2.0 PKCE Skill
 
 ## Security Rules (Non-Negotiable)
 - **Never log** `access_token`, `refresh_token`, `mc_token`, or `user_hash`.
@@ -106,7 +106,7 @@ pub async fn wait_for_auth_code() -> Result<String, String> {
 ```rust
 use keyring::Entry;
 
-const SERVICE: &str = "pulsar-client";
+const SERVICE: &str = "Rival-client";
 const MC_TOKEN_KEY: &str = "mc_token";
 const REFRESH_TOKEN_KEY: &str = "refresh_token";
 
